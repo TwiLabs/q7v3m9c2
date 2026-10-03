@@ -6,7 +6,7 @@
   "assets": [
     {
       "path": "/_headers",
-      "sha256": "9112bfc04e39e2142ff73b223729775e8bcb864f47c94c2d6f03dc081c8146e8",
+      "sha256": "e585ec36210249b4b21b3ba28dd63aa74ec1d61e282e91c49c3a8ee5f1d448c3",
       "contentType": "application/octet-stream",
       "size": 1971
     },
@@ -23,25 +23,25 @@
       "size": 206105
     },
     {
-      "path": "/assets/GamesPage-383e523d88c56fe1.js",
-      "sha256": "2d56cc50b07a50595e1ee46ebfe43ea767852838ace69f540cdab295add44bea",
+      "path": "/assets/GamesPage-a634f616d0cc189b.js",
+      "sha256": "f9c30574e1f4dd3dbd884f076e892f15a8e24c320fc24e5db45e8949d567f22d",
       "contentType": "application/javascript",
       "size": 17871
     },
     {
-      "path": "/assets/PlaybackPage-383e523d88c56fe1.js",
-      "sha256": "e16a39936b61d842ee628b75d6ae2e161b667117645d0362b5f801cf6a033a92",
+      "path": "/assets/PlaybackPage-a634f616d0cc189b.js",
+      "sha256": "9f8002b3620a4105a78466729bf2185dbdb33505cb7d013eda4092b156a10411",
       "contentType": "application/javascript",
       "size": 9176
     },
     {
-      "path": "/assets/SettingsPage-383e523d88c56fe1.js",
-      "sha256": "e8a601be708e2847d69b5386667832cab04eee6a2b27afd01bee83a3404a5b3a",
+      "path": "/assets/SettingsPage-a634f616d0cc189b.js",
+      "sha256": "518fd19b7e313d2c92257bf6ba997ad6a8d8db9f114c61b242fa3eaa3b28bfaa",
       "contentType": "application/javascript",
-      "size": 25017
+      "size": 25020
     },
     {
-      "path": "/assets/ads-383e523d88c56fe1.js",
+      "path": "/assets/ads-a634f616d0cc189b.js",
       "sha256": "9799a3015ef2104f4a099d83e42d3f7f5e6fd8a3253daf48b7b6d4051956bc6d",
       "contentType": "application/javascript",
       "size": 2524
@@ -59,7 +59,7 @@
       "size": 179469
     },
     {
-      "path": "/assets/games-383e523d88c56fe1.js",
+      "path": "/assets/games-a634f616d0cc189b.js",
       "sha256": "44e518d963bf1028c6c9a131fb901718e20e05ac7e51d03a0d0dbc4e23ff6c4d",
       "contentType": "application/javascript",
       "size": 57128
@@ -2063,7 +2063,7 @@
       "size": 6640
     },
     {
-      "path": "/assets/logo-383e523d88c56fe1.webp",
+      "path": "/assets/logo-a634f616d0cc189b.webp",
       "sha256": "6adcd947c04053cf7758a15fb2511c8845e5623dce15efb3ed56414718901a43",
       "contentType": "image/webp",
       "size": 118196
@@ -2081,38 +2081,38 @@
       "size": 38126
     },
     {
-      "path": "/assets/lyveeorsm8khyj-383e523d88c56fe1.js",
+      "path": "/assets/lyveeorsm8khyj-a634f616d0cc189b.js",
       "sha256": "e054d91c2d31bbcd96bd90525c75cc7ea1e335471e54d14a1920d95752759e01",
       "contentType": "application/javascript",
       "size": 47
     },
     {
-      "path": "/assets/main-383e523d88c56fe1.css",
+      "path": "/assets/main-a634f616d0cc189b.css",
       "sha256": "fdb74cfe0b32c9e6382f8bc79bab9a33bb17be3f000bd9d378caee83e79ca7a7",
       "contentType": "text/css",
       "size": 25
     },
     {
-      "path": "/assets/main-383e523d88c56fe1.js",
-      "sha256": "79cdc7f8a77b00f838c42f9cd0b5ea639ce8d51e75206abe0bcc615a6c02eefe",
+      "path": "/assets/main-a634f616d0cc189b.js",
+      "sha256": "42bcb7a327be0b5b807ab463b76d7d3e3bafae33a0ff387f568c8d5eda7881ce",
       "contentType": "application/javascript",
       "size": 313680
     },
     {
-      "path": "/assets/newtab-383e523d88c56fe1.css",
+      "path": "/assets/newtab-a634f616d0cc189b.css",
       "sha256": "367e2d6ccd562fec017296862773105536ac6d4fd271afb12693d0867e8de97d",
       "contentType": "text/css",
       "size": 48572
     },
     {
-      "path": "/assets/newtab-383e523d88c56fe1.js",
-      "sha256": "5235ab2f9fe16e22699cd7891bccaf1ff68c031c602f4fb5dfa38ab4bc43bfcc",
+      "path": "/assets/newtab-a634f616d0cc189b.js",
+      "sha256": "79ff32587026cdd760dce1fd6187797be1a8abba214a7d63fddbd8060c6f53b4",
       "contentType": "application/javascript",
       "size": 8590
     },
     {
-      "path": "/assets/night-login.cdn-383e523d88c56fe1.js",
-      "sha256": "da469f2c1f8f3118209060396e32535be6996952ea1f89c63ecafe5bde3cb491",
+      "path": "/assets/night-login.cdn-a634f616d0cc189b.js",
+      "sha256": "192cdf7b7d709449f5d4e93786c5379304c41ac1bd118f485d6ae93dadc6572e",
       "contentType": "application/javascript",
       "size": 891727
     },
@@ -2129,44 +2129,44 @@
       "size": 107232
     },
     {
-      "path": "/assets/rolldown-runtime-383e523d88c56fe1.js",
+      "path": "/assets/rolldown-runtime-a634f616d0cc189b.js",
       "sha256": "101087c385ddfea7c37eb72790fd5aa7a3d647e85dc24171c830034ed27d3c90",
       "contentType": "application/javascript",
       "size": 1216
     },
     {
-      "path": "/assets/runtime-383e523d88c56fe1.js",
-      "sha256": "11542b30b0525b36f9c6eed346c4287591b4d10fcbacea44e6eb4633bb02e08e",
+      "path": "/assets/runtime-a634f616d0cc189b.js",
+      "sha256": "d708c7ec134845943ed43472bcd9119afd683aea04819f567e4939e2f577f5ea",
       "contentType": "application/javascript",
       "size": 13836
     },
     {
-      "path": "/assets/useLocalStorage-383e523d88c56fe1.js",
-      "sha256": "03bc59c0570d979e2345358c113a44c867885c253c52e9ac9a8cf369b23e1816",
+      "path": "/assets/useLocalStorage-a634f616d0cc189b.js",
+      "sha256": "d76301e2d878d38667a992ff53d11e5b1bea4fa676e85a487ed99db676b0a429",
       "contentType": "application/javascript",
       "size": 1744
     },
     {
-      "path": "/assets/vendor-lucide-383e523d88c56fe1.js",
-      "sha256": "a72cfef366afa4e45368cff86c79283d06c68419091d997cc8eb954d38e387a6",
+      "path": "/assets/vendor-lucide-a634f616d0cc189b.js",
+      "sha256": "1270228d9163733f65b2e01167197a126285919262e3dccad536fa4119dd0ecb",
       "contentType": "application/javascript",
       "size": 8130
     },
     {
-      "path": "/assets/vendor-motion-383e523d88c56fe1.js",
-      "sha256": "20e30276ae31d4eac0e9d7a2ccab8ebe6cf837de6a47afcd4e5752462fa28a13",
+      "path": "/assets/vendor-motion-a634f616d0cc189b.js",
+      "sha256": "02fbdfebd9debaf1ee5cc505cccb1bfd8fe5de7b7c255159893ab33498b18c3c",
       "contentType": "application/javascript",
       "size": 126568
     },
     {
-      "path": "/assets/vendor-react-383e523d88c56fe1.js",
-      "sha256": "5a712e1de1f6270ae6336ca9b421a9667c8753560a21dbbace1dd58f40967da0",
+      "path": "/assets/vendor-react-a634f616d0cc189b.js",
+      "sha256": "10ec6253642a00885287a58a9d27c8b62be299e7b3734168caf311066a262f36",
       "contentType": "application/javascript",
       "size": 189645
     },
     {
-      "path": "/assets/vendor-utils-383e523d88c56fe1.js",
-      "sha256": "d65c9d1075c7bc5071f9935d7413df165575433955888b540494aa35bcd545de",
+      "path": "/assets/vendor-utils-a634f616d0cc189b.js",
+      "sha256": "2effac8e9200d3ee6a07c0a0e3ca391f660403df4c6f7667b946df458df50f43",
       "contentType": "application/javascript",
       "size": 29079
     },
@@ -2250,13 +2250,13 @@
     },
     {
       "path": "/index.html",
-      "sha256": "27c96c1d1b5c78e4caa3c4ad1c60f8a501060c88b7cb2b1db6544b0d2b259048",
+      "sha256": "e6d27e2d3ce97c3d005bf87192bd766e559453872b61520b4533437ce86e034f",
       "contentType": "text/html",
       "size": 28299
     },
     {
       "path": "/index.svg",
-      "sha256": "9bb01b84b2d8d509e0ed7fc69b5001741bbaccf3b6f9263a942cab6ec6e58fed",
+      "sha256": "038033de6e28fa56e47132a5904aa3ba82dfe2bc5e49f0bc24b175733f9965ba",
       "contentType": "image/svg+xml",
       "size": 30826
     },
@@ -2280,7 +2280,7 @@
     },
     {
       "path": "/newtab.html",
-      "sha256": "09fd8871ebfa55f1807d8b2dc6a00890a49dd6558be378dcea8413a6e38f779b",
+      "sha256": "3e8b1b8d223e2c27089e7fbc7b7d1e7e2af7fcc21f0117de5b495c151bd1c81c",
       "contentType": "text/html",
       "size": 1210
     },
@@ -2394,15 +2394,15 @@
     },
     {
       "path": "/static-assets-sw.js",
-      "sha256": "e7bc8df8405653d3ca89ce295fa2d7dfcdc449289a868ef055ab9f459fa0fd93",
+      "sha256": "7161bb9f16270e7e75264f0f1e679128dd91e25ae5d90409d8da89181a41308f",
       "contentType": "application/javascript",
-      "size": 2900
+      "size": 2977
     },
     {
       "path": "/sw.js",
-      "sha256": "953ec2ff02292a8dd57df28d4cb9afd7bb6c09d6629bcf4cfb90f7cbb17a3397",
+      "sha256": "d4520bf9e0e2b791afd677bf6588472cbc529f1de962b3633967676d4eb6eae4",
       "contentType": "application/javascript",
-      "size": 1221
+      "size": 1249
     },
     {
       "path": "/ttf/LICENSE.txt",
