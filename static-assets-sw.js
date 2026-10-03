@@ -3,7 +3,7 @@
 
 	const packageScope = () => new URL(self.registration.scope);
 	const cachePrefix = () => `${CACHE_FAMILY}${encodeURIComponent(packageScope().pathname)}:`;
-	const cacheName = () => `${cachePrefix()}${encodeURIComponent(self.__SPACE_PROXY_CONFIG__?.buildId || 'development')}`;
+	const cacheName = () => `${cachePrefix()}${encodeURIComponent(self.mas2db7bv92gl5qrngsifs?.buildId || 'development')}`;
 
 	function packagePath(request) {
 		const url = new URL(request.url);
@@ -19,9 +19,9 @@
 		const path = packagePath(request);
 		if (path === null || !path) return false;
 
-		const proxyPrefix = String(self.__SPACE_PROXY_CONFIG__?.prefix || '/s/res/').replace(/^\//, '');
+		const proxyPrefix = String(self.mas2db7bv92gl5qrngsifs?.prefix || '/s/res/').replace(/^\//, '');
 		if (path.startsWith(proxyPrefix) || path.startsWith('api/')) return false;
-		return /^(?:index\.svg|index\.html|newtab\.html|space-config\.json|space-proxy\.js|space-manifest\.json|sw\.js|assets\/|fonts\/|s\/(?!res\/)|c\/|l\/|ep\/|ut\/)/.test(path);
+		return /^(?:index\.svg|index\.html|newtab\.html|space-config\.json|pc2lf3fzh8f\.js|space-manifest\.json|sw\.js|assets\/|fonts\/|s\/(?!res\/)|c\/|l\/|ep\/|ut\/)/.test(path);
 	}
 
 	async function spaceStaticAssetResponse(request, fetchImpl = fetch) {

@@ -1,4 +1,4 @@
-globalThis.__SPACE_PROXY_CONFIG__ = Object.assign({"prefix":"/s/res/","scramjetPath":"/s/cuf7avvz.js","wasmPath":"/s/cuf7avvz.wasm","injectPath":"/c/controller.inject.js"}, {buildId:JSON.parse(globalThis.String.fromCharCode(34,100,101,118,101,108,111,112,109,101,110,116,34))}, {codec:{encode:(function base32Encode(url) {
+globalThis.mas2db7bv92gl5qrngsifs = Object.assign({"prefix":"/s/res/","scramjetPath":"/s/cuf7avvz.js","wasmPath":"/s/cuf7avvz.wasm","injectPath":"/c/controller.inject.js"}, {buildId:JSON.parse(globalThis.String.fromCharCode(34,100,101,118,101,108,111,112,109,101,110,116,34))}, {codec:{encode:(function base32Encode(url) {
   let bits = 0, value = 0, output = "";
   for (const byte of new TextEncoder().encode(url)) {
     value = value << 8 | byte;

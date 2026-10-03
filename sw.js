@@ -5,7 +5,7 @@ if (navigator.userAgent.includes('Firefox')) {
 	});
 }
 
-importScripts('./space-proxy.js');
+importScripts('./pc2lf3fzh8f.js');
 importScripts('./static-assets-sw.js');
 importScripts('./c/controller.sw.js');
 
