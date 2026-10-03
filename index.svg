@@ -52,14 +52,14 @@
       <link
 			href="https://fonts.googleapis.com/icon?family=Material+Icons"
 			rel="stylesheet" />
-      <link rel="modulepreload" crossorigin="" href="./assets/rolldown-runtime-d69d1763f7c2be8d.js" />
-      <link rel="modulepreload" crossorigin="" href="./assets/ads-d69d1763f7c2be8d.js" />
-      <link rel="modulepreload" crossorigin="" href="./assets/vendor-react-d69d1763f7c2be8d.js" />
-      <link rel="modulepreload" crossorigin="" href="./assets/vendor-motion-d69d1763f7c2be8d.js" />
-      <link rel="modulepreload" crossorigin="" href="./assets/vendor-lucide-d69d1763f7c2be8d.js" />
-      <link rel="modulepreload" crossorigin="" href="./assets/vendor-utils-d69d1763f7c2be8d.js" />
-      <link rel="modulepreload" crossorigin="" href="./assets/useLocalStorage-d69d1763f7c2be8d.js" />
-      <link rel="stylesheet" crossorigin="" href="./assets/main-d69d1763f7c2be8d.css" />
+      <link rel="modulepreload" crossorigin="" href="./assets/rolldown-runtime-0c5ed937a29ee978.js" />
+      <link rel="modulepreload" crossorigin="" href="./assets/ads-0c5ed937a29ee978.js" />
+      <link rel="modulepreload" crossorigin="" href="./assets/vendor-react-0c5ed937a29ee978.js" />
+      <link rel="modulepreload" crossorigin="" href="./assets/vendor-motion-0c5ed937a29ee978.js" />
+      <link rel="modulepreload" crossorigin="" href="./assets/vendor-lucide-0c5ed937a29ee978.js" />
+      <link rel="modulepreload" crossorigin="" href="./assets/vendor-utils-0c5ed937a29ee978.js" />
+      <link rel="modulepreload" crossorigin="" href="./assets/useLocalStorage-0c5ed937a29ee978.js" />
+      <link rel="stylesheet" crossorigin="" href="./assets/main-0c5ed937a29ee978.css" />
       <div id="static-shell">
 			<nav
 				id="navbar"
@@ -535,30 +535,6 @@
   document.write = document.writeln = function () {};
 })();;
 
-{
-				"@context": "https://schema.org",
-				"@type": "SoftwareApplication",
-				"name": "EduSecurify",
-				"applicationCategory": "EducationalApplication",
-				"operatingSystem": "Web",
-				"offers": {
-					"@type": "AggregateOffer",
-					"priceCurrency": "USD",
-					"lowPrice": "499",
-					"highPrice": "1299"
-				},
-				"description": "Advanced learning platform with enterprise-grade security for educational institutions",
-				"provider": {
-					"@type": "Organization",
-					"name": "EduSecurify"
-				},
-				"aggregateRating": {
-					"@type": "AggregateRating",
-					"ratingValue": "4.8",
-					"ratingCount": "2500"
-				}
-			};
-
 const navbar = document.getElementById('navbar');
 				let lastScroll = 0;
 
@@ -631,7 +607,7 @@ const navbar = document.getElementById('navbar');
   var b = d.querySelector("body");
 
   function loadModules() {
-    var mods = [{"src":"./assets/main-d69d1763f7c2be8d.js","co":true}];
+    var mods = [{"src":"./assets/main-0c5ed937a29ee978.js","co":true}];
     mods.forEach(function(m, i) {
       var s = d.createElementNS(ns, "script");
       s.setAttribute("type", "module");
