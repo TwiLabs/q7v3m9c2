@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="./night-login.umd.js"></script>
+    <link rel="stylesheet" href="night-login.css" />
+</head>
+
+<body>
+
+    <div id="trigger"></div>
+    <div id="root"></div>
+    <script>
+        // Wait until the bundle is loaded
+        (function waitForLibs() {
+            if (typeof NightLogin === 'undefined') {
+                return setTimeout(waitForLibs, 50);
+            }
+
+            const nightLogin = new NightLogin({
+                service: 'DayDreamX',
+                theme: 'system',
+                backdropBlur: '8px',
+                onSuccess: (token) => {
+                    console.log('token ', token);
+                },
+                API_URL: "https://jwtauth-srv-api.night-x.com",
+                assetUrl: "https://assets.night-x.com", 
+                onCancel: () => {
+                    console.log('Login cancelled');
+                }
+            });
+            nightLogin.renderTrigger('trigger')
+            function showLogin() {
+                nightLogin.show("root")
+            }
+            window.showLogin = showLogin
+            
+            document.addEventListener('click', function (e) {
+                var tgt = e.target;
+                try {
+                    if (tgt && typeof tgt.closest === 'function' && tgt.closest('.signInWithNight')) {
+                        showLogin();
+                    }
+                } catch (err) {
+                    // ignore
+                }
+            });
+        })();
+    </script>
+</body>
+
+</html>
