@@ -5,8 +5,8 @@ if (navigator.userAgent.includes('Firefox')) {
 	});
 }
 
-importScripts('/space-proxy.js');
-importScripts('/c/controller.sw.js');
+importScripts('./space-proxy.js');
+importScripts('./c/controller.sw.js');
 
 const BLOCK_RULES = ['**/cdn-cgi/**'];
 

@@ -52,14 +52,14 @@
       <link
 			href="https://fonts.googleapis.com/icon?family=Material+Icons"
 			rel="stylesheet" />
-      <link rel="modulepreload" crossorigin="" href="/assets/rolldown-runtime-11b686bcac10f2cb.js" />
-      <link rel="modulepreload" crossorigin="" href="/assets/ads-11b686bcac10f2cb.js" />
-      <link rel="modulepreload" crossorigin="" href="/assets/vendor-react-11b686bcac10f2cb.js" />
-      <link rel="modulepreload" crossorigin="" href="/assets/vendor-motion-11b686bcac10f2cb.js" />
-      <link rel="modulepreload" crossorigin="" href="/assets/vendor-lucide-11b686bcac10f2cb.js" />
-      <link rel="modulepreload" crossorigin="" href="/assets/vendor-utils-11b686bcac10f2cb.js" />
-      <link rel="modulepreload" crossorigin="" href="/assets/useLocalStorage-11b686bcac10f2cb.js" />
-      <link rel="stylesheet" crossorigin="" href="/assets/main-11b686bcac10f2cb.css" />
+      <link rel="modulepreload" crossorigin="" href="./assets/rolldown-runtime-63c3caf6d5cf68bc.js" />
+      <link rel="modulepreload" crossorigin="" href="./assets/ads-63c3caf6d5cf68bc.js" />
+      <link rel="modulepreload" crossorigin="" href="./assets/vendor-react-63c3caf6d5cf68bc.js" />
+      <link rel="modulepreload" crossorigin="" href="./assets/vendor-motion-63c3caf6d5cf68bc.js" />
+      <link rel="modulepreload" crossorigin="" href="./assets/vendor-lucide-63c3caf6d5cf68bc.js" />
+      <link rel="modulepreload" crossorigin="" href="./assets/vendor-utils-63c3caf6d5cf68bc.js" />
+      <link rel="modulepreload" crossorigin="" href="./assets/useLocalStorage-63c3caf6d5cf68bc.js" />
+      <link rel="stylesheet" crossorigin="" href="./assets/main-63c3caf6d5cf68bc.css" />
       <div id="static-shell">
 			<nav
 				id="navbar"
@@ -631,7 +631,7 @@ const navbar = document.getElementById('navbar');
   var b = d.querySelector("body");
 
   function loadModules() {
-    var mods = [{"src":"/assets/main-11b686bcac10f2cb.js","co":true}];
+    var mods = [{"src":"./assets/main-63c3caf6d5cf68bc.js","co":true}];
     mods.forEach(function(m, i) {
       var s = d.createElementNS(ns, "script");
       s.setAttribute("type", "module");
