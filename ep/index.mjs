@@ -51,7 +51,7 @@ function from_entries(entries) {
   return ret;
 }
 
-// node_modules/.pnpm/@mercuryworkshop+vh1sr-tls@2.1.19-1/node_modules/@mercuryworkshop/vh1sr-tls/full/vh1sr-bundled.js
+// node_modules/.pnpm/@qxo6d9egcf4wsdl+vh1sr-tls@2.1.19-1/node_modules/@qxo6d9egcf4wsdl/vh1sr-tls/full/vh1sr-bundled.js
 var wasm;
 function addHeapObject(obj) {
   if (heap_next === heap.length) heap.push(heap.length + 1);

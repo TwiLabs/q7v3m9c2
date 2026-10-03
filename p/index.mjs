@@ -9,4 +9,4 @@ localforage/dist/localforage.js:
       (c) 2013-2017 Mozilla, Apache License 2.0
   *)
 */
-//# sourceMappingURL=index.mjs.map
+

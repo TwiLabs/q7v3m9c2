@@ -52,14 +52,14 @@
       <link
 			href="https://fonts.googleapis.com/icon?family=Material+Icons"
 			rel="stylesheet" />
-      <link rel="modulepreload" crossorigin="" href="./assets/rolldown-runtime-8105028563685ae2.js" />
-      <link rel="modulepreload" crossorigin="" href="./assets/ads-8105028563685ae2.js" />
-      <link rel="modulepreload" crossorigin="" href="./assets/vendor-react-8105028563685ae2.js" />
-      <link rel="modulepreload" crossorigin="" href="./assets/vendor-motion-8105028563685ae2.js" />
-      <link rel="modulepreload" crossorigin="" href="./assets/vendor-lucide-8105028563685ae2.js" />
-      <link rel="modulepreload" crossorigin="" href="./assets/vendor-utils-8105028563685ae2.js" />
-      <link rel="modulepreload" crossorigin="" href="./assets/useLocalStorage-8105028563685ae2.js" />
-      <link rel="stylesheet" crossorigin="" href="./assets/main-8105028563685ae2.css" />
+      <link rel="modulepreload" crossorigin="" href="./assets/rolldown-runtime-7602137fcf071a90.js" />
+      <link rel="modulepreload" crossorigin="" href="./assets/ads-7602137fcf071a90.js" />
+      <link rel="modulepreload" crossorigin="" href="./assets/vendor-react-7602137fcf071a90.js" />
+      <link rel="modulepreload" crossorigin="" href="./assets/vendor-motion-7602137fcf071a90.js" />
+      <link rel="modulepreload" crossorigin="" href="./assets/vendor-lucide-7602137fcf071a90.js" />
+      <link rel="modulepreload" crossorigin="" href="./assets/vendor-utils-7602137fcf071a90.js" />
+      <link rel="modulepreload" crossorigin="" href="./assets/useLocalStorage-7602137fcf071a90.js" />
+      <link rel="stylesheet" crossorigin="" href="./assets/main-7602137fcf071a90.css" />
       <div id="static-shell">
 			<nav
 				id="navbar"
@@ -607,15 +607,14 @@ const navbar = document.getElementById('navbar');
   var b = d.querySelector("body");
 
   function loadModules() {
-    var mods = [{"src":"./assets/main-8105028563685ae2.js","co":true}];
-    mods.forEach(function(m, i) {
+    var mods = [{"src":"./assets/main-7602137fcf071a90.js","co":true}];
+    var remaining = mods.length;
+    mods.forEach(function(m) {
       var s = d.createElementNS(ns, "script");
       s.setAttribute("type", "module");
       s.setAttribute("src", m.src);
       if (m.co) s.setAttribute("crossorigin", "");
-      if (i === mods.length - 1) {
-        s.onload = function() { d.dispatchEvent(new Event("DOMContentLoaded")); };
-      }
+      s.onload = s.onerror = function() { s.onload = s.onerror = null; if (--remaining === 0) d.dispatchEvent(new Event("DOMContentLoaded")); };
       b.appendChild(s);
     });
   }

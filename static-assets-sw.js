@@ -26,10 +26,18 @@
 
 	async function spaceStaticAssetResponse(request, fetchImpl = fetch) {
 		if (!isPackageAsset(request)) return null;
+		const htmlResponse = response => {
+			if (response.status !== 200 || response.type === 'opaque' ||
+				(response.url && packagePath({ url: response.url }) === null) ||
+				!packagePath(request)?.endsWith('.html')) return response;
+			const headers = new Headers(response.headers);
+			headers.set('Content-Type', 'text/html; charset=utf-8');
+			return new Response(response.body, { status: response.status, statusText: response.statusText, headers });
+		};
 
 		const cache = await caches.open(cacheName());
 		try {
-			const response = await fetchImpl(request);
+			const response = htmlResponse(await fetchImpl(request));
 			if (
 				response.status === 200 &&
 				response.type !== 'opaque' &&
@@ -40,7 +48,7 @@
 			return response;
 		} catch (error) {
 			const cached = await cache.match(request);
-			if (cached) return cached;
+			if (cached) return htmlResponse(cached);
 			return new Response('Space package resource is unavailable', {
 				status: 503,
 				headers: { 'Content-Type': 'text/plain; charset=utf-8' },
