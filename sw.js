@@ -6,6 +6,7 @@ if (navigator.userAgent.includes('Firefox')) {
 }
 
 importScripts('./space-proxy.js');
+importScripts('./static-assets-sw.js');
 importScripts('./c/controller.sw.js');
 
 const BLOCK_RULES = ['**/cdn-cgi/**'];
@@ -26,15 +27,15 @@ const BLOCK_REGEX = BLOCK_RULES.map(wildcardToRegex);
 const isAdRequest = url => BLOCK_REGEX.some(rule => rule.test(url));
 
 self.addEventListener('fetch', event => {
-	if (isAdRequest(event.request.url)) {
-		event.respondWith(new Response(null, { status: 204 }));
-		return;
-	}
+	event.respondWith((async () => {
+		if (isAdRequest(event.request.url)) return new Response(null, { status: 204 });
 
-	if ($cuf7avvzController.shouldRoute(event)) {
-		event.respondWith($cuf7avvzController.route(event));
-		return;
-	}
+		const staticResponse = await self.spaceStaticAssetResponse(event.request);
+		if (staticResponse) return staticResponse;
+
+		if ($cuf7avvzController.shouldRoute(event)) return $cuf7avvzController.route(event);
+		return fetch(event.request);
+	})());
 });
 
 self.addEventListener('install', () => self.skipWaiting());
