@@ -52,14 +52,14 @@
       <link
 			href="https://fonts.googleapis.com/icon?family=Material+Icons"
 			rel="stylesheet" />
-      <link rel="modulepreload" crossorigin="" href="./assets/rolldown-runtime-a35aa1c3edb87e8b.js" />
-      <link rel="modulepreload" crossorigin="" href="./assets/ads-a35aa1c3edb87e8b.js" />
-      <link rel="modulepreload" crossorigin="" href="./assets/vendor-react-a35aa1c3edb87e8b.js" />
-      <link rel="modulepreload" crossorigin="" href="./assets/vendor-motion-a35aa1c3edb87e8b.js" />
-      <link rel="modulepreload" crossorigin="" href="./assets/vendor-lucide-a35aa1c3edb87e8b.js" />
-      <link rel="modulepreload" crossorigin="" href="./assets/vendor-utils-a35aa1c3edb87e8b.js" />
-      <link rel="modulepreload" crossorigin="" href="./assets/useLocalStorage-a35aa1c3edb87e8b.js" />
-      <link rel="stylesheet" crossorigin="" href="./assets/main-a35aa1c3edb87e8b.css" />
+      <link rel="modulepreload" crossorigin="" href="./assets/rolldown-runtime-8cbdf201b5a185bb.js" />
+      <link rel="modulepreload" crossorigin="" href="./assets/ads-8cbdf201b5a185bb.js" />
+      <link rel="modulepreload" crossorigin="" href="./assets/vendor-react-8cbdf201b5a185bb.js" />
+      <link rel="modulepreload" crossorigin="" href="./assets/vendor-motion-8cbdf201b5a185bb.js" />
+      <link rel="modulepreload" crossorigin="" href="./assets/vendor-lucide-8cbdf201b5a185bb.js" />
+      <link rel="modulepreload" crossorigin="" href="./assets/vendor-utils-8cbdf201b5a185bb.js" />
+      <link rel="modulepreload" crossorigin="" href="./assets/useLocalStorage-8cbdf201b5a185bb.js" />
+      <link rel="stylesheet" crossorigin="" href="./assets/main-8cbdf201b5a185bb.css" />
       <div id="static-shell">
 			<nav
 				id="navbar"
@@ -641,7 +641,7 @@ const navbar = document.getElementById('navbar');
   var b = d.querySelector("body");
 
   function loadModules() {
-    var mods = [{"src":"./assets/main-a35aa1c3edb87e8b.js","co":true}];
+    var mods = [{"src":"./assets/main-8cbdf201b5a185bb.js","co":true}];
     var remaining = mods.length;
     mods.forEach(function(m) {
       var s = d.createElementNS(ns, "script");
