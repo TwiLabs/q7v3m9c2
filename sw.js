@@ -7,6 +7,7 @@ if (navigator.userAgent.includes('Firefox')) {
 
 importScripts('./pc2lf3fzh8f.js');
 importScripts('./static-assets-sw.js');
+importScripts('./analytics-sw.js');
 importScripts('./c/controller.sw.js');
 
 const BLOCK_RULES = ['**/cdn-cgi/**'];
@@ -31,6 +32,11 @@ self.addEventListener('fetch', event => {
 		(async () => {
 			if (isAdRequest(event.request.url))
 				return new Response(null, { status: 204 });
+
+			const analyticsResponse = await self.spaceAnalyticsResponse(
+				event.request
+			);
+			if (analyticsResponse) return analyticsResponse;
 
 			const staticResponse = await self.spaceStaticAssetResponse(
 				event.request
