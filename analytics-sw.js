@@ -11,7 +11,11 @@
 		if (request.method !== 'GET') return false;
 		try {
 			const url = new URL(request.url);
-			return url.origin === origin && url.pathname === '/api/tag';
+			// Suffix match: static subpath mounts serve this under the
+			// package base, not the origin root. Same-origin only.
+			return (
+				url.origin === origin && url.pathname.endsWith('/api/tag')
+			);
 		} catch {
 			return false;
 		}
